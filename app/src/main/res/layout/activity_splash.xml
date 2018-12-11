@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/gradient_black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/appNameLL"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/comingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/coming"
+                android:fontFamily="@font/lineto_circular_pro_book"
+                android:textColor="@color/white"
+                style="@style/Base.TextAppearance.AppCompat.Display1"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/soon"
+                android:fontFamily="@font/lineto_circular_pro_bold"
+                android:textColor="@color/colorPrimary"
+                style="@style/Base.TextAppearance.AppCompat.Display2"/>
+
+    </LinearLayout>
+
+    <com.github.silvestrpredko.dotprogressbar.DotProgressBar
+            android:id="@+id/dotProgressBar"
+            android:layout_width="match_parent"
+            android:layout_below="@id/appNameLL"
+            android:layout_height="@dimen/default_margin"
+            android:layout_margin="@dimen/margin_8"
+            custom:amount="5"
+            custom:duration="@android:integer/config_mediumAnimTime"
+            custom:endColor="@color/colorPrimary"
+            custom:startColor="@color/white"
+            custom:animationDirection="right"/>
+
+</RelativeLayout>
+
+

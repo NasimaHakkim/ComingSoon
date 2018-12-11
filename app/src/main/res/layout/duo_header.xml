@@ -1,0 +1,32 @@
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/appNameLL"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/comingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/coming"
+                android:textColor="@color/white"
+                style="@style/Base.TextAppearance.AppCompat.Display1"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/soon"
+                android:textColor="@color/colorPrimary"
+                style="@style/Base.TextAppearance.AppCompat.Display1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

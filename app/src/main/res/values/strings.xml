@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ComingSoon</string>
+    <string name="coming">coming</string>
+    <string name="soon">Soon</string>
+    <string name="discover">Discover</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">Tv Shows</string>
+    <string name="people">People</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="log_out">Log out</string>
+    <string name="popular">Top picks for you</string>
+    <string name="trending">Popular Movies</string>
+    <string name="popular_in_drama">Popular in Drama</string>
+    <string name="popular_in_bollywood">Popular in Bollywood</string>
+    <string name="popular_in_tamil">Popular in Tamil</string>
+    <string name="similar_movies">Similar Movies</string>
+</resources>

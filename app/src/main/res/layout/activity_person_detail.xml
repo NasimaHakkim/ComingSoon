@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ImageView
+            android:id="@+id/backgroundBlurIv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:alpha="0.3"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"/>
+
+
+    <androidx.cardview.widget.CardView
+            app:cardElevation="@dimen/default_mini_padding"
+            android:layout_margin="@dimen/margin_40"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:scaleType="fitXY"
+                        android:id="@+id/backgroundIv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_400"
+                        android:contentDescription="@string/app_name"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvMovieName"
+                        android:layout_below="@id/backgroundIv"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:padding="@dimen/margin_8"
+                        android:fontFamily="@font/lineto_circular_pro_medium"
+                        android:textSize="@dimen/text_17"
+                        android:textColor="@color/black"/>
+
+                <TextView
+                        android:id="@+id/tvOverView"
+                        android:layout_below="@id/ratingBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_8"
+                        android:fontFamily="@font/lineto_circular_pro_medium"
+                        android:textSize="@dimen/text_14"
+                        android:textColor="@color/md_grey_500"/>
+
+                <RatingBar
+                        android:rating="3.5"
+                        android:id="@+id/ratingBar"
+                        android:theme="@style/RatingBar"
+                        android:stepSize="0.3"
+                        android:numStars="5"
+                        android:alpha="0.6"
+                        android:padding="@dimen/margin_8"
+                        android:layout_below="@id/tvMovieName"
+                        android:paddingBottom="@dimen/margin_12"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

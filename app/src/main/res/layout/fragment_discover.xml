@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/popularTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_4"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_marginStart="@dimen/margin_20"
+                android:fontFamily="@font/lineto_circular_pro_medium"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/popular"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cardStackView"
+                android:layout_width="match_parent"
+                android:layout_below="@id/popularTv"
+                tools:listitem="@layout/item_popular"
+                android:layout_height="@dimen/margin_250"/>
+
+        <TextView
+                android:id="@+id/trendingTv"
+                android:layout_below="@id/cardStackView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:paddingTop="@dimen/fab_margin"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:fontFamily="@font/lineto_circular_pro_medium"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/trending"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/trendingTv"
+                android:layout_width="match_parent"
+                android:id="@+id/trendingList"
+                android:paddingTop="@dimen/margin_8"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/popularDramaTv"
+                android:layout_below="@id/trendingList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:paddingTop="@dimen/fab_margin"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:fontFamily="@font/lineto_circular_pro_medium"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/popular_in_drama"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/popularDramaTv"
+                android:layout_width="match_parent"
+                android:id="@+id/popularDramaList"
+                android:paddingTop="@dimen/margin_8"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/popularBollywoodTv"
+                android:layout_below="@id/popularDramaList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:paddingTop="@dimen/fab_margin"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:fontFamily="@font/lineto_circular_pro_medium"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/popular_in_bollywood"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/popularBollywoodTv"
+                android:layout_width="match_parent"
+                android:id="@+id/popularBollywoodList"
+                android:paddingTop="@dimen/margin_8"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/popularTamilTv"
+                android:layout_below="@id/popularBollywoodList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:paddingTop="@dimen/fab_margin"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:fontFamily="@font/lineto_circular_pro_medium"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/popular_in_tamil"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/popularTamilTv"
+                android:layout_width="match_parent"
+                android:id="@+id/popularTamilList"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:paddingTop="@dimen/margin_8"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_height="wrap_content"/>
+
+        <ProgressBar
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

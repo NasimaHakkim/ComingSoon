@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:marginFactor="0.6">
+
+        <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
+                android:id="@+id/drawerMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:tag="@string/tag_menu"
+                app:header="@layout/duo_header">
+
+            <LinearLayout
+                    android:tag="@string/tag_menu"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_background_light_blue"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                        android:id="@+id/appNameLL"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margin_30"
+                        android:layout_marginStart="@dimen/fab_margin"
+                        android:layout_marginEnd="@dimen/fab_margin"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coming"
+                            android:fontFamily="@font/lineto_circular_pro_medium"
+                            android:textColor="@color/white"
+                            style="@style/Base.TextAppearance.AppCompat.Display1"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soon"
+                            android:fontFamily="@font/lineto_circular_pro_bold"
+                            android:textColor="@color/colorPrimary"
+                            style="@style/Base.TextAppearance.AppCompat.Display2"/>
+
+                </LinearLayout>
+
+                <TextView
+                        android:id="@+id/discoverTv"
+                        android:padding="@dimen/fab_margin"
+                        android:layout_marginTop="@dimen/margin_30"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/lineto_circular_pro_medium"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discover"
+                        android:textColor="@color/white"
+                        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+                <TextView
+                        android:id="@+id/moviesTv"
+                        android:padding="@dimen/fab_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/movies"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/lineto_circular_pro_medium"
+                        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                        android:id="@+id/showsTv"
+                        android:padding="@dimen/fab_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_shows"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/lineto_circular_pro_medium"
+                        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+                <TextView
+                        android:id="@+id/peopleTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/people"
+                        android:padding="@dimen/fab_margin"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/lineto_circular_pro_medium"
+                        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                        android:id="@+id/profileTv"
+                        android:padding="@dimen/fab_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/lineto_circular_pro_medium"
+                        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                        android:id="@+id/settingsTv"
+                        android:padding="@dimen/fab_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/lineto_circular_pro_medium"
+                        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+                <TextView
+                        android:id="@+id/logoutTv"
+                        android:padding="@dimen/fab_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/log_out"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/lineto_circular_pro_medium"
+                        style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+            </LinearLayout>
+
+        </nl.psdcompany.duonavigationdrawer.views.DuoMenuView>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:tag="@string/tag_content">
+
+            <View
+                    android:id="@+id/menuShadow"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/md_grey_400"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white">
+
+                    <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            card_view:cardCornerRadius="@dimen/noRadius"/>
+
+
+                    <FrameLayout
+                            android:layout_below="@id/toolbar"
+                            android:id="@+id/container"
+                            android:layout_above="@id/bottomNavigationView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                            android:id="@+id/bottomNavigationView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/white"
+                            app:elevation="@dimen/margin_8"
+                            app:labelVisibilityMode="labeled"
+                            app:itemIconTint="@drawable/bottom_nav_selector"
+                            app:itemTextColor="@drawable/bottom_nav_selector_text"
+                            app:menu="@menu/menu_bottom"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_discover"
+        android:icon="@drawable/ic_explore_black_24dp"
+        android:title="@string/discover" />
+    <item
+        android:id="@+id/item_movies"
+        android:icon="@drawable/ic_movie"
+        android:title="@string/movies" />
+
+    <item
+        android:id="@+id/item_shows"
+        android:icon="@drawable/ic_shows"
+        android:title="@string/tv_shows" />
+
+    <item
+        android:id="@+id/item_people"
+        android:icon="@drawable/ic_people"
+        android:title="@string/people" />
+
+    <item
+        android:id="@+id/item_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+
+</menu>
